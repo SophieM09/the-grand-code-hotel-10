@@ -1,185 +1,145 @@
 .footer {
-    background-color: #DFEBEB;
-    padding: 64px;
-    font-family: "Sarabun", sans-serif;
+    background-color: #DFEBEB;       
     display: flex;
     flex-direction: column;
-    min-width: 375px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
-
 .footer-container {
-    background-color: #F8FBFE;
-    padding: 48px;
+    background-color: #F8FBFE;    
     display: flex;
-    flex-direction: column;
-    max-width: 320px;
+    flex-direction: column;  
     align-items: flex-start;
+    border: 0px solid rgba(13, 11, 10, 0.15);
+    border-radius: 16px;
+    padding: 32px;
+    gap: 48px;
 }
-
-.footer-pre-form {
-    max-width: 320px;
+.footer-logo {
+    width: 84px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-
-.footer-links {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: left;
-}
-
-.quick-links {
-    margin-right: 8px;
-    width: 165px;
-    text-align: left;
-}
-
 .footer-first-par {
     font-size: 16px;
-    font-weight: 400;
-    line-height: 160%;
+    text-align: start;
+    margin-bottom: 20px;
 }
-
-.footer-form-cont {
-    margin-top: 24px;
-}
-
-.foot-form-input {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 160%;
-    letter-spacing: 0%;
-    height: 42px;
-    padding: 8px 12px;
-    border-radius: 12px;
-    border: none;
-    width: 271px;
-}
-
-.footer-button {
-    justify-content: center;
-    align-items: center;
-    font-family: "Sarabun", sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 160%;
-    color: #0D0B0A;
-    background-color: #0D0B0A0D;
-    border: none;
-    border-radius: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30px;
-    height: 26px;
-    width: 279px;
-    height: 46px;
-    padding: 10px 125px;
-}
-
-.all-rights {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0%;
-    margin-left: 48px;
-}
-
-.privacy {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 160%;
-    letter-spacing: 0%;
-}
-
-.links-sections {
-    padding: 0;
-    margin: 0;
+.footer-form {
     display: flex;
     flex-direction: column;
+    gap: 16px;
+    margin-bottom: 12px;
 }
-
-.quick-links {
-    text-align: left;
+.foot-form-input {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 12px;
+    padding: 8px 12px;
+    width: 100%;
+    height: 42px;
+    line-height: 1.6;
+    background-color: rgba(13, 11, 10, 0.05);
 }
-
-.linc-section-par,
-.media-par {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 160%;
-    letter-spacing: 0%;
+.foot-form-input::placeholder {   
+    line-height: 1.6;
+    color: rgba(13, 11, 10, 0.6);
 }
-
-.quick-links-title,
-.connect-us {
+.footer-button {
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 100px;
+    padding: 10px 24px;
+    width: 279px;
+    height: 46px;
+    background-color: rgba(13, 11, 10, 0.05);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;    
+}
+.privacy {   
+    font-size: 12px;
+    text-align: start;    
+}
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    gap: 40px;
+}
+.quick-links-title {
+    margin-bottom: 12px;
     font-weight: 600;
     font-size: 16px;
-    line-height: 160%;
-    letter-spacing: 0%;
 }
-
-.footer-media-list {
-    margin: 0;
-    padding: 0;
+.quick-links {    
+    width: 165px;
+    text-align: left;       
 }
-
+.links-sections {   
+    display: flex;
+    flex-direction: column;    
+}
+.link-section-item {
+    padding: 8px 0;
+}
+.linc-section-par {
+    font-size: 14px;
+}
+.foot-media-item {
+    padding: 9px 0;    
+}
 .media-icon {
     display: flex;
+    flex-direction: row;
+    gap: 12px;
     align-items: center;
-    justify-content: flex-start;
+}
+.media-par {    
+    font-size: 14px;    
 }
 
-.media-svg {
-    background-color: #DFEBEB;
-    margin-right: 4px;
+.all-rights {   
+    font-size: 14px;   
 }
 
-.quick-links,
-.connect-with-us {
-    width: 100%;
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1335.98px) {
+@media screen and (min-width: 768px) {
     .footer-container {
-        flex-direction: column;
-        min-width: 704px;
-        align-items: flex-start;
+        padding: 40px 32px;
+        gap: 40px;     
     }
-
+    .footer-logo {
+        margin-bottom: 24px;
+    }
     .footer-first-par {
-        width: 640px;
+        margin-bottom: 24px;
     }
-
-    .footer-button {
-        margin-left: 16px;
-        padding: 10px 24px;
-        width: 78px;
-        height: 46px;
+    .footer-pre-form {
+        width: 100%;
     }
-
+    .footer-button {    
+        width: 78px;        
+    }
     .footer-form {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        width: 680px;
+        flex-wrap: wrap;        
+        gap: 16px;
     }
-
-    .foot-form-input {
-        width: 546px;
+    .foot-form-label {
+        flex-grow: 1;
     }
-
-    .footer-links {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 40px;
+    .quick-links-title {
+        margin-bottom: 16px;
+    } 
+    .footer-links {        
+        flex-direction: row;        
     }
-
     .quick-links,
     .connect-with-us {
         width: 300px;
     }
-
     .connect-with-us {
         align-items: flex-start;
         display: flex;
@@ -189,56 +149,27 @@
 
 @media screen and (min-width: 1336px) {
     .footer {
-        width: 1440px;
+        padding-top: 64px;
+        padding-bottom: 64px;
     }
-
-    .footer-first-par {
-        width: 595px;
-    }
-
     .footer-container {
+        padding: 48px;
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        flex-wrap: wrap;
-        min-width: 1312px;
+        flex-wrap: wrap;       
         flex-direction: row;
+        row-gap: 0;       
+    }    
+    .footer-pre-form {
+        width: 595px;
     }
-
-    .footer-links {
-        display: flex;
-    }
-
-    .footer-button {
-        cursor: pointer;
-        margin-left: 16px;
-        padding: 10px 24px;
-        width: 78px;
-        height: 46px;
-    }
-
     .footer-form {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: center;
-        width: 620px;
+        align-items: center;     
     }
-
-    .foot-form-input {
-        width: 501px;
-    }
-
-    .footer-links {
-        display: flex;
-        flex-direction: row;
-        gap: 40px;
-    }
-
-    .media-icon {
-        justify-content: center;
-    }
-
     .quick-links,
     .connect-with-us {
         width: 165px;
