@@ -80,6 +80,12 @@
   display: block;
 }
 
+.menu-link:hover,
+.menu-link:focus {
+  color:  rgba(13, 11, 10, 0.5);
+  transition: color 250ms ease;
+}
+
 .menu-join-link {
   display: block;
   border: 1px solid #c2d9fc;
